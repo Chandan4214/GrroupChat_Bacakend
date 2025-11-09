@@ -14,6 +14,8 @@ const io = new Server(server, {
   },
 });
 
+
+
 const PORT = process.env.PORT || 4000;
 
 // Store connected users
@@ -79,7 +81,7 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("✅ Socket.IO Chat Server Running");
+  res.send("✅ Socket.IO Chat Server Running.........");
 });
 
 server.listen(PORT, () => {
